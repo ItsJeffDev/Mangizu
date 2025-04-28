@@ -147,6 +147,27 @@ body {
   background-color: aqua;
   width: 50%;
   height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Box .Box-ImgZ .Img-Box{
+  width:  50%;
+  margin-right: 50px;
+  border: 15px solid white;
+  border-top: 0;
+  border-bottom: 0;
+  height: 100%;
+  background-color: #16203f;
+  transform: skew(-20deg);
+  overflow: hidden;
+}
+
+.Box .Box-ImgZ .Img-Box img{
+  transform: skew(15deg);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .Box-items{
