@@ -131,6 +131,23 @@ body {
   display: flex;
   transition: background-color 0.5s ease;
 }
+.Box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Box .Box-Text{
+  width: 50%;
+  height: 100%;
+  background-color: red;
+}
+
+.Box .Box-ImgZ{
+  background-color: aqua;
+  width: 50%;
+  height: 100%;
+}
 
 .Box-items{
   /*
