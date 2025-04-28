@@ -4,12 +4,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mangazu</title>
+  <title>Mangizu</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="icon.png">
   <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .footer{
+      display: flex;
+      justify-content: flex-start;
+      gap: 35px;
+      padding-top: 20px;
+      align-items: center;
+      flex-direction: column;
+      color: wheat;
+    }
+
+    .footer img {
+      width: 200px;
+      height: auto;
+    }
+    .footer p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 500;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -21,13 +43,15 @@
     <label for="menu-toggle" class="hamburger">&#9776;</label>
 
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Unknown</a></li>
+      <li><a href="#">Latest</a></li>
+      <li><a href="#">Most-Viewed</a></li>
       <li><a id="ilaw">𖤓</a></li>
     </ul>
   </nav>
   <div>
-    <div class="Box"></div>
+    <div class="Box">
+      
+    </div>
   </div>
   <div>
     <div class="Box-items">
@@ -106,7 +130,7 @@
     </div>
   </div>
   <div class="load"><button class="btn-more">Load More</button></div>
-  <div class="footer"></div>
+  <div class="footer"><img src="logo_dark.png" alt="Mangizu"> <p>© 2025 Mangizu. All rights reserved.</p></div>
   <script src="main.js" defer></script>
 </body>
 
