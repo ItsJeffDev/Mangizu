@@ -2,6 +2,20 @@ const ilaw_active = document.getElementById('ilaw');
 let ilaw_box = document.querySelector('.Box');
 let active = true;
 
+document.addEventListener('click', function(event) {
+
+    const menuToggle = document.getElementById('menu-toggle');
+  
+    const hamburger = document.querySelector('.hamburger');
+  
+  
+    // Check if the click was outside the hamburger and the menu
+    if (!hamburger.contains(event.target) && !menuToggle.contains(event.target)){
+        menuToggle.checked = false;
+    }
+  
+  });
+
 ilaw_active.addEventListener('click', () => {
     if (active){
         document.body.style.backgroundColor = 'white';

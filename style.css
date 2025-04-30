@@ -118,7 +118,7 @@ body {
 .Box {  
   font-size: 2.8vw;
   padding:0;
-  width: 90%;
+  width: 83.2%;
   max-height: 500px;
   position: relative;
   min-height: 250px;
@@ -161,10 +161,11 @@ body {
 }
 
 .Box .Box-ImgZ .Img-Box img{
-  transform: skew(15deg);
   width: 100%;
   height: 100%;
   object-fit: cover;
+  -o-object-fit: fill;
+
 }
 
 
