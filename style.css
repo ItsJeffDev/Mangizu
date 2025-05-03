@@ -129,43 +129,20 @@ body {
   display: flex;
   transition: background-color 0.5s ease;
 }
+
+.Box img{
+  max-width: 100%;
+  transition: all 1.5s ease-in-out;
+}
+
+.Box img:hover{
+  transform:rotate(360deg);
+  filter:saturate(1.5)
+}
 .Box {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.Box .Box-Text{
-  background-color: white;
-  width: 50%;
-  height: 100%;
-}
-
-.Box .Box-ImgZ{
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.Box .Box-ImgZ .Img-Box{
-  width:  50%;
-  margin-right: 70px;
-  border: 15px solid #070F2B;
-  border-top: 0;
-  border-bottom: 0;
-  height: 100%;
-  background-color: #070F2B;
-  transform: skew(-14deg);
-  overflow: hidden;
-}
-
-.Box .Box-ImgZ .Img-Box img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  -o-object-fit: fill;
-
 }
 
 
@@ -235,6 +212,7 @@ blured .2s ease-in-out;
 
 .Box-items .items .items-Img img:hover {
   transform: scale(1.1);
+  filter: saturate(1.5);
 }
 
 
@@ -325,7 +303,7 @@ blured .2s ease-in-out;
 
 .footer{
   display: flex;
-  background-color: #070F2B;
+  background: linear-gradient(to bottom, #070F2B, black);
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;

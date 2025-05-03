@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Text Example</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            padding: 20px;
+
+            background-color: #f4f4f4;
+
+        }
+
+
+        h1 {
+
+            font-size: clamp(2rem, 5vw, 4rem); /* Responsive heading */
+
+            color: #333;
+
+            text-align: center;
+
+        }
+
+
+        p {
+
+            font-size: 1rem; /* Base font size */
+
+            line-height: 1.5;
+
+            color: #666;
+
+            text-align: center;
+
+        }
+
+
+        @media (max-width: 768px) {
+
+            p {
+
+                font-size: 0.9rem; /* Smaller font size for medium screens */
+
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            h1 {
+
+                font-size: 2rem; /* Smaller heading for small screens */
+
+            }
+
+            p {
+
+                font-size: 0.8rem; /* Even smaller font size for small screens */
+
+            }
+
+        }
+
+
+        .container {
+
+            max-width: 800px;
+
+            margin: 0 auto;
+
+            padding: 20px;
+
+            background-color: #fff;
+
+            border-radius: 8px;
+
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Responsive Heading</h1>
+
+        <p>This is a paragraph with responsive text size. Resize the window to see how the text adjusts!</p>
+
+    </div>
+
+</body>
+
+</html>

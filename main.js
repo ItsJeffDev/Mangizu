@@ -8,12 +8,11 @@ document.addEventListener('click', function(event) {
   
     const hamburger = document.querySelector('.hamburger');
   
-  
+
     // Check if the click was outside the hamburger and the menu
     if (!hamburger.contains(event.target) && !menuToggle.contains(event.target)){
         menuToggle.checked = false;
     }
-  
   });
 
 ilaw_active.addEventListener('click', () => {
