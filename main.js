@@ -1,5 +1,4 @@
 const ilaw_active = document.getElementById('ilaw');
-let ilaw_box = document.querySelector('.Box');
 let active = true;
 
 document.addEventListener('click', function(event) {
@@ -18,12 +17,10 @@ document.addEventListener('click', function(event) {
 ilaw_active.addEventListener('click', () => {
     if (active){
         document.body.style.backgroundColor = 'white';
-        ilaw_box.style.backgroundColor = '#03081a';
         active = false;
         console.log(active);
     } else if (!active){
         document.body.style.backgroundColor = '#03081a';
-        ilaw_box.style.backgroundColor = 'white';
         active = true;
         console.log(active);
     }
