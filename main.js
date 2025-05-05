@@ -26,6 +26,21 @@ ilaw_active.addEventListener('click', () => {
     }
 })
 
+
+ let names = ["jeff", "kolin", "miranda"];
+
+ let sortedNames = names.sort()
+
+ let input = document.getElementById('search');
+ 
+
+ input.addEventListener('keyup', (e) => {
+    for (let i of sortedNames){
+        if (i.toLowerCase().startsWith(input.ariaValueMax.toLowerCase()) && input.value != ""){
+            
+        }
+    }
+ })
 /*
 
     document.body.toggleAttribute(active = true);
