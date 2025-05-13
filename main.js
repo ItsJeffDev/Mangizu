@@ -1,5 +1,8 @@
 const ilaw_active = document.getElementById('ilaw');
 let active = true;
+const searchBar = document.getElementById("search-bar");
+const autocompleteList = document.getElementById("autocomplete-list");
+const searchButton = document.getElementById("search-button");
 
 document.addEventListener('click', function(event) {
 
@@ -25,10 +28,6 @@ ilaw_active.addEventListener('click', () => {
         console.log(active);
     }
 });
-
-const searchBar = document.getElementById("search-bar");
-const autocompleteList = document.getElementById("autocomplete-list");
-const searchButton = document.getElementById("search-button");
 
 // Sample data for autocomplete
 const mangaTitles = [
