@@ -1,6 +1,7 @@
 const ilaw_active = document.getElementById('ilaw');
 let active = true;
 const searchBar = document.getElementById("search-bar");
+const searchBar_style = document.querySelector(".search-bar")
 const autocompleteList = document.getElementById("autocomplete-list");
 const searchButton = document.getElementById("search-button");
 
@@ -78,7 +79,10 @@ searchButton.addEventListener("click", function () {
   if (query === "magic emperor") {
     window.location.href = "magic_emperor.html";
   } else {
-    alert("Please select a valid manga title!");
+    searchBar.style.background = "red";
+    setTimeout(() => {
+      searchBar.style.background = "";
+    },1000); 
   }
 });
 

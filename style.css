@@ -327,7 +327,7 @@ body {
   background: linear-gradient(135deg, #3e3586, #6a5acd);
   color: #fff;
   cursor: pointer;
-  margin-left: 10px;
+  margin: 0 10px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -380,9 +380,9 @@ body {
   display: flex;
   align-items: center;
   margin-left: auto;
-  margin-top: 5px;
+  margin-top: 15px;
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;
 }
 
 .search-bar {
@@ -394,7 +394,6 @@ body {
   color: wheat;
   transition: all 0.3s ease;
 }
-
 .search-bar:focus {
   outline: none;
   border-color: rgb(62, 53, 134);
@@ -437,13 +436,18 @@ body {
   color: #fff;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .search-container {
-    max-width: 100%;
-    margin: 10px 0;
+@media (max-width: 520px){
+    .logo{
+    max-width: 60%;
   }
+}
 
+/* Responsive Design */
+@media (max-width: 520px) {
+  .search-container {
+    max-width: 80%;
+    margin: 10px 10%;
+  }
   .search-bar {
     font-size: 14px;
     padding: 8px 12px;
